@@ -4,5 +4,5 @@ var counter=0;
 counter++;
  
  
-var span=document.getElementById("span");
+var span=document.getElementById("count");
 span.innerHTML=counter.toString();
