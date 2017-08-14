@@ -2,11 +2,29 @@
 <html>
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
+        <script>
+            function resImg(image){
+        var resize = 200; // amount in percentage
+        var oldheight  = 150;  // height of your image
+        var oldwidth  = 250; // width of your image
+        var X = event.x;
+        var Y = event.y;
+        var newHeight   = oldheight * (resize / 100);
+        var newWidth   = oldwidth * (resize / 100);
+ 
+        image.style.height = newHeight;//height of new image
+        image.style.width  = newWidth;// width of new image
+ 
+        var c = image.parentNode;
+        
+        c.scrollLeft = (X * (resize / 100)) - (newWidth / 2) / 2; //this is for 
+        c.scrollTop  = (Y * (resize / 100)) - (newHeight / 2) / 2;//new center
+      }
+        </script>
     </head>
     <body>
         <div class="center">
-            
-            <img src="https://scontent.fdel1-2.fna.fbcdn.net/v/t1.0-9/18341888_1182980018478657_5336597844320384262_n.jpg?oh=c85d471b32484a5498e102506d8c02f3&oe=5A3874D0" class="img-medium"/>
+            <img usemap="#CheckCompany" border="0"  önmouseover="resImg(this)" style="width: 1280px; height: 984px" src="https://scontent.fdel1-2.fna.fbcdn.net/v/t1.0-9/18341888_1182980018478657_5336597844320384262_n.jpg?oh=c85d471b32484a5498e102506d8c02f3&oe=5A3874D0" class="img-medium"/>
         </div>
         <br>
         <div class="center text-big bold">
