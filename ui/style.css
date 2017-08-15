@@ -4,6 +4,15 @@ body {
     margin-top: 75px;
 }
 
+.zoomMe{
+    width:auto;
+    height:auto;
+}
+.zoomMe: hover{
+    width:110%;
+    height:110%;
+}
+
 .center {
     text-align: center;
 }
@@ -33,5 +42,6 @@ body {
         padding-right:20px;
         padding-bottom:20px;
     }
+    
     
     
